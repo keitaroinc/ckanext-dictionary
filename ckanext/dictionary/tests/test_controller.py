@@ -6,20 +6,20 @@ import ckan.tests.helpers as helpers
 import ckan.model as model
 from ckan.tests import factories
 
-# from pprint import pprint
-#
-# webtest_submit = helpers.webtest_submit
-# submit_and_follow = helpers.submit_and_follow
-#
-#
-# class TestDictonaryController(helpers.FunctionalTestBase):
-#     def setup(self):
-#         super(TestDictonaryController, self).setup()
-#         self.app = helpers._get_test_app()
-#         self.user = factories.Sysadmin()
-#         self.user_env = {'REMOTE_USER': self.user['name'].encode('ascii')}
-#         self.dataset = factories.Dataset()
-#
+from pprint import pprint
+
+webtest_submit = helpers.webtest_submit
+submit_and_follow = helpers.submit_and_follow
+
+
+class TestDictonaryController(helpers.FunctionalTestBase):
+    def setup(self):
+        super(TestDictonaryController, self).setup()
+        self.app = helpers._get_test_app()
+        self.user = factories.Sysadmin()
+        self.user_env = {'REMOTE_USER': self.user['name'].encode('ascii')}
+        self.dataset = factories.Dataset()
+
 #     def test_new_data_dictionary(self):
 #         #/dataset/dictionary/new_dict/{id}
 #         edit_dict_url = url_for(controller='ckanext.dictionary.controller:DDController',
