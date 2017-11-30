@@ -20,23 +20,23 @@ class TestDictonaryController(helpers.FunctionalTestBase):
         self.user_env = {'REMOTE_USER': self.user['name'].encode('ascii')}
         self.dataset = factories.Dataset()
 
-    # def test_new_data_dictionary(self):
-        # #/dataset/dictionary/new_dict/{id}
-        # edit_dict_url = url_for(controller='ckanext.dictionary.controller:DDController',
-        #                     action='new_data_dictionary',
-        #                         id=self.dataset['id'])
-        # r = self.app.post(edit_dict_url,
-        #               params={
-        #                   'field-0': 'field',
-        #                   'title-0': 'title',
-        #                   'format_0': 'Default String',
-        #                   'description_0': 'desc'
-        #               },
-        #               extra_environ=self.user_env)
-        #
-        # #print r.status_int
-        # if r.status_int == 302:
-        #     assert r.status_int == 302/
+    def test_new_data_dictionary(self):
+        #/dataset/dictionary/new_dict/{id}
+        edit_dict_url = url_for(controller='ckanext.dictionary.controller:DDController',
+                            action='new_data_dictionary',
+                                id=self.dataset['id'])
+        r = self.app.post(edit_dict_url,
+                      params={
+                          'field-0': 'field',
+                          'title-0': 'title',
+                          'format_0': 'Default String',
+                          'description_0': 'desc'
+                      },
+                      extra_environ=self.user_env)
+
+        #print r.status_int
+        if r.status_int == 302:
+            assert r.status_int == 302
 
     # def test_new_resource_ext(self):
     #     #dataset/new_resource/{id}
