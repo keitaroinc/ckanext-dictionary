@@ -1,10 +1,3 @@
-.. image:: https://travis-ci.org/keitaroinc/ckanext-dictionary.svg?branch=master
-    :target: https://travis-ci.org/keitaroinc/ckanext-dictionary
-
-.. image:: https://coveralls.io/repos/github/keitaroinc/ckanext-dictionary/badge.svg?branch=master
-    :target: https://coveralls.io/github/keitaroinc/ckanext-dictionary?branch=master
-
-
 =============
 ckanext-dictionary
 =============
@@ -14,8 +7,6 @@ ckanext-dictionary
    Users see the data dictionary as another tab for each dataset.
    Since this dictionary extension utilizes the DataStore extension, Data Dictionary information can
    be accessed via API.
-
-
 
 The extension adds the ability to include a data dictionary (metadata) for each dataset.
 Admins can create the data dictionary when adding the dataset, or create/modify it any other time.
