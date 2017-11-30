@@ -30,8 +30,4 @@ echo "Installing ckanext-dictionary and its requirements..."
 python setup.py develop
 pip install -r dev-requirements.txt
 
-echo "Moving test.ini into a subdir..."
-mkdir subdir
-mv test.ini subdir
-
 echo "travis-build.bash is done."
