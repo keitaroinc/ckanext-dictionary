@@ -1,7 +1,7 @@
 language: python
 python:
   - "2.7"
-env: PGVERSION=9.1
+env: PGVERSION=9.2
 dist: thusty
 sudo: required
 cache: pip
