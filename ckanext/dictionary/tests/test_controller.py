@@ -20,7 +20,7 @@ class TestDictonaryController(helpers.FunctionalTestBase):
         self.user_env = {'REMOTE_USER': self.user['name'].encode('ascii')}
         self.dataset = factories.Dataset()
 
-    def test_new_data_dictionary(self):
+    # def test_new_data_dictionary(self):
         # #/dataset/dictionary/new_dict/{id}
         # edit_dict_url = url_for(controller='ckanext.dictionary.controller:DDController',
         #                     action='new_data_dictionary',
